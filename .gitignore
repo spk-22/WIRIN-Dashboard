@@ -1,1 +1,6 @@
-node_modules/\n.next/\nout/\ndist/\n.env\n.DS_Store
+node_modules/
+.next/
+out/
+dist/
+.env
+.DS_Store
