@@ -1,0 +1,190 @@
+/* styles/Side.module.css */
+.sideContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 1000px;
+    left: 1600px;
+}
+
+.box {
+    position: relative;
+    width: 1200px;
+    height: 425px;
+    background-color: #515151BF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    border-radius: 25px;
+    margin: 20px;
+    z-index: 2;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    left: 60px;
+    transform: translateY(-140px);
+}
+
+
+.statusLabel {
+    position: absolute;
+    font-size: 60px;
+    font-weight: 400;
+    color: #737373;
+    left: 60px;
+    transform: translateY(10px);
+}
+
+.statusValue {
+    position: absolute;
+    color: #737373;
+    font-size: 60px;
+    font-weight: 400;
+    left: 60px;
+    /* Space between status label and value */
+    transform: translateY(80px);
+}
+
+.openText {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    left: 950px;
+    transform: translateY(45px);
+}
+
+.svgContainer {
+    position: absolute;
+    left: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.sideSvg1 {
+    width: 1800px;
+    height: 2000px;
+    margin-top: 200px;
+    z-index: 2;
+    margin-left: 000px;
+}
+
+.sideSvg2 {
+    width: 2000px;
+    margin-left: -1900px;
+    margin-top: 600px;
+    height: 2200px;
+    z-index: 1;
+}
+
+
+.horizontalLineLeft {
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    /* Line thickness */
+    width: 380px;
+    /* Full width of the parent container */
+    top: -300px;
+    /* Center horizontally in the parent */
+    left: 220px;
+    transform: translateY(1000px);
+    /* Center vertically in the parent */
+    z-index: 1;
+    /* Ensure it's visible above other content */
+}
+
+.horizontalLineLeft::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    /* Size of the circle */
+    height: 25px;
+    /* Size of the circle */
+    background-color: white;
+    border-radius: 10px;
+    /* Make it a circle */
+    top: -10px;
+    /* Adjust if needed to align with the horizontal line */
+    left: 10px;
+    /* Align circle to the end of the line */
+    transform: translateX(-50%);
+    /* Center horizontally */
+}
+
+.verticalLineLeft {
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    /* Line thickness */
+    height: 600px;
+    /* Full height of the parent container */
+    left: 700px;
+    /* Center vertically in the parent */
+    top: 700px;
+    transform: translateX(-100px);
+    /* Center horizontally in the parent */
+    z-index: 1;
+    /* Ensure it's visible above other content */
+}
+
+
+.horizontalLineRight {
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    /* Line thickness */
+    width: 750px;
+    /* Adjust length as needed */
+    top: 800px;
+    /* Adjust position as needed */
+    left: 100px;
+    /* Adjust position as needed */
+    transform: translateY(1000px);
+    z-index: 1;
+}
+
+.horizontalLineRight::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    /* Size of the circle */
+    height: 25px;
+    /* Size of the circle */
+    background-color: white;
+    border-radius: 10px;
+    /* Make it a circle */
+    top: -10px;
+    /* Adjust if needed to align with the horizontal line */
+    left: 20px;
+    /* Align circle to the end of the line */
+    transform: translateX(-50%);
+    /* Center horizontally */
+}
+
+
+.verticalLineRight {
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    /* Line thickness */
+    height: 300px;
+    /* Adjust length as needed */
+    left: 850px;
+    /* Adjust position as needed */
+    top: 1500px;
+    /* Adjust position as needed */
+    transform: translateX(-50%);
+    z-index: 1;
+}

@@ -1,0 +1,242 @@
+/* styles/Tyres.module.css */
+.layoutContainer {
+    display: flex;
+    flex-direction: row;
+    /* Ensure that elements are laid out in a row */
+    position: relative;
+    /* Ensure children can be positioned absolutely */
+}
+
+.tyresBox {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    background-color: #515151BF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.tyresDiagram {
+    position: absolute;
+    /* Adjust as needed */
+    left: 3000px;
+    /* Adjust as needed */
+    width: 2000px;
+    /* Adjust size as needed */
+    height: 3500px;
+    /* Maintain aspect ratio */
+    transform: translateY(-600px);
+    z-index: 1000;
+    /* Ensure it's positioned behind the grey boxes */
+}
+
+.text {
+    color: white;
+    position: absolute;
+    left: 60px;
+    /* Position the text absolutely within the box */
+    transform: translateY(-150px);
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.pressure1 {
+    color: #737373;
+    position: relative;
+    font-size: 70px;
+    font-weight: 400;
+    left: -180px;
+    transform: translateY(90px);
+}
+
+.pressure2 {
+    color: #737373;
+    position: relative;
+    font-size: 70px;
+    font-weight: 400;
+    left: -200px;
+    transform: translateY(110px);
+}
+
+.pressure3 {
+    color: white;
+    position: relative;
+    font-size: 70px;
+    font-weight: 400;
+    right: -250px;
+    transform: translateY(-10px);
+}
+
+/* Common styles for lines */
+.line {
+    position: absolute;
+    background-color: white;
+
+    /* Ensure this is above the background but below any other important content */
+}
+
+.linesWrapper {
+    position: absolute;
+    /* Ensure children can be positioned absolutely */
+    width: 100%;
+    /* Ensure the wrapper takes full width of its parent */
+    height: 100%;
+    /* Ensure the wrapper takes full height of its parent */
+}
+
+/* Horizontal lines */
+.horizontalLineBox1 {
+
+    top: 200px;
+    /* Adjust as needed for the position */
+    left: 900px;
+    /* Adjust as needed for the position */
+    width: 520px;
+    /* Adjust length as needed */
+    height: 5px;
+    /* Line thickness */
+    z-index: 2;
+    /* Ensure it's visible above other elements */
+}
+
+.horizontalLineBox2 {
+    top: 80px;
+    /* Adjust as needed for the position */
+    left: 900px;
+    /* Adjust as needed for the position */
+    width: 700px;
+    /* Adjust length as needed */
+    height: 2px;
+    /* Line thickness */
+    z-index: 2;
+    /* Ensure it's visible above other elements */
+}
+
+.horizontalLineBox3 {
+    top: 170px;
+    /* Adjust as needed for the position */
+    left: 300px;
+    /* Adjust as needed for the position */
+    width: 200px;
+    /* Adjust length as needed */
+    height: 5px;
+    /* Line thickness */
+    z-index: 2;
+    /* Ensure it's visible above other elements */
+}
+
+.horizontalLineBox4 {
+    top: 1200px;
+    /* Adjust as needed for the position */
+    left: 100px;
+    /* Adjust as needed for the position */
+    width: 200px;
+    /* Adjust length as needed */
+    height: 2px;
+    /* Line thickness */
+    z-index: 2;
+    /* Ensure it's visible above other elements */
+}
+
+/* Vertical lines */
+.verticalLineBox1 {
+    top: 200px;
+    /* Adjust as needed for the position */
+    left: 1420px;
+    /* Adjust as needed for the position */
+    width: 2px;
+    /* Line thickness */
+    height: 480px;
+    /* Adjust length as needed */
+    z-index: -1;
+    /* Ensure it's visible above other elements */
+}
+
+
+.verticalLineBox3 {
+    top: 170px;
+    /* Adjust as needed for the position */
+    left: 300px;
+    /* Adjust as needed for the position */
+    width: 5px;
+    /* Line thickness */
+    height: 600px;
+    /* Adjust length as needed */
+    z-index: 2;
+    /* Ensure it's visible above other elements */
+}
+
+.verticalLineBox4 {
+    background-color: white;
+    top: -50px;
+    /* Adjust as needed for the position */
+    left: 800px;
+    /* Adjust as needed for the position */
+    width: 5px;
+    /* Line thickness */
+    height: 180px;
+    /* Adjust length as needed */
+    z-index: 2;
+    /* Ensure it's visible above other elements */
+}
+
+/* Horizontal lines with circles at the ends for boxes 1 and 3 */
+.horizontalLineBox1::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    /* Size of the circle */
+    height: 25px;
+    /* Size of the circle */
+    background-color: white;
+    border-radius: 50%;
+    /* Make it a circle */
+    top: -10px;
+    /* Adjust if needed to align with the horizontal line */
+    left: 15px;
+    /* Align circle to the end of the line */
+    transform: translateX(-50%);
+    /* Center horizontally */
+}
+
+.horizontalLineBox3::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    /* Size of the circle */
+    height: 25px;
+    /* Size of the circle */
+    background-color: white;
+    border-radius: 50%;
+    /* Make it a circle */
+    top: -10px;
+    /* Adjust if needed to align with the horizontal line */
+    left: 200px;
+    /* Align circle to the end of the line */
+    transform: translateX(-50%);
+    /* Center horizontally */
+}
+
+.horizontalLineBox2::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    /* Size of the circle */
+    height: 25px;
+    /* Size of the circle */
+    background-color: white;
+    border-radius: 50%;
+    /* Make it a circle */
+    top: -10px;
+    /* Adjust if needed to align with the horizontal line */
+    left: 0px;
+    /* Align circle to the end of the line */
+    transform: translateX(-50%);
+    /* Center horizontally */
+}

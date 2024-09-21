@@ -1,0 +1,83 @@
+.container {
+    position: absolute;
+    width: 1000px;
+    height: calc(100vh - 110px);
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the start of the container */
+    align-items: center;
+    margin: 0;
+    top: 0;
+    background-color: #161616;
+}
+
+.iconsContainer {
+    display: flex;
+    flex-direction: column;
+    /* Stack icons vertically */
+    align-items: flex-start;
+    /* Align items to the start of the container */
+    gap: 30px;
+    position: absolute;
+    left: 20px;
+    /* Align container to the left edge */
+    top: 350px;
+    /* Adjust as needed */
+    padding: 0;
+    /* Remove any padding */
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+}
+
+.icon img {
+    width: 80%;
+    height: 80%;
+    fill: currentColor;
+
+}
+
+.iconText {
+    font-family: Urbanist, sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: left;
+    color: #737373;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.iconWrapper.active .iconText {
+    color: white;
+    /* Text color when active */
+}
+
+.iconText {
+    color: #737373;
+    /* Default text color */
+}
+
+
+.iconWrapper.active .icon img {
+    fill: white;
+    /* Ensure SVG uses the current text color */
+}
+
+.defaultTextColor {
+    color: #737373;
+    /* Default color for text when not active */
+}

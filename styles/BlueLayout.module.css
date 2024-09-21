@@ -1,0 +1,32 @@
+.blueLayout {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, #081F44 0%, rgba(19, 30, 65, 0.8) 24.5%, rgba(29, 42, 93, 0.8) 40.1%, rgba(18, 34, 79, 0.9) 68.1%, #081F44 100%);
+}
+
+.backArrow {
+    position: absolute;
+    top: 150px;
+    /* Adjust position */
+    left: 2000px;
+    /* Adjust position */
+    width: 90px;
+    /* Adjust size */
+    height: 90px;
+    cursor: pointer;
+    border: none;
+    /* Remove default border */
+    background: none;
+    /* Remove default background */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    /* Center content if needed */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    z-index: -1;
+}
